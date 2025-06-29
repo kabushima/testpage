@@ -15,4 +15,12 @@ document.addEventListener('DOMContentLoaded', () => {
     fadeInElements.forEach(element => {
         observer.observe(element);
     });
+
+    const hamburgerMenu = document.getElementById('hamburger-menu');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburgerMenu.addEventListener('click', () => {
+        hamburgerMenu.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
 });
